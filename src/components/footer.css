@@ -1,0 +1,132 @@
+.footer {
+    text-align: center;
+    font-weight: bold;
+    max-width: 100%;
+    padding: 1em;
+}
+
+.wallet-address {
+    color: rgb(41, 191, 41); /* Add your desired styling here */
+    word-wrap: break-word;
+}
+
+.copy-button {
+    margin-left: 10px;
+    padding: 3px 6px;
+    font-size: 0.7em;
+    cursor: pointer;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+}
+
+.copy-button:hover {
+    background-color: #0a2544;
+}
+
+.copy-success {
+    color: green;
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+.footer-link { 
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(41, 191, 41);
+    padding: 0.5em;
+    border-radius: 10px;
+}
+
+.footer-link:hover {
+    color: #007bff;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1200px) {
+    .footer {
+        padding: 0.8em;
+        font-size: 1.1em;
+    }
+}
+
+@media (max-width: 992px) {
+    .copy-button {
+        font-size: 0.8em;
+    }
+    .footer {
+        padding: 0.6em;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer {
+        padding: 0.5em;
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 576px) {
+    .footer {
+        padding: 0.4em;
+        font-size: 0.9em;
+    }
+    .copy-button {
+        font-size: 0.7em;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer {
+        padding: 0.3em;
+        font-size: 0.85em;
+    }
+}
+
+@media (max-width: 360px) {
+    .footer {
+        padding: 0.2em;
+        font-size: 0.8em;
+    }
+    .copy-button {
+        margin-left: 5px;
+        padding: 2px 5px;
+    }
+}
+
+@media (min-width: 1440px) {
+    .footer {
+        padding: 1.2em;
+        font-size: 1.2em;
+    }
+    .copy-button {
+        font-size: 0.9em;
+    }
+}
+
+@media (min-width: 1600px) {
+    .footer {
+        padding: 1.4em;
+        font-size: 1.3em;
+    }
+}
+
+@media (min-width: 1800px) {
+    .footer {
+        padding: 1.6em;
+        font-size: 1.4em;
+    }
+    .copy-button {
+        font-size: 1em;
+    }
+}
+
+@media (min-width: 2000px) {
+    .footer {
+        padding: 1.8em;
+        font-size: 1.5em;
+    }
+}

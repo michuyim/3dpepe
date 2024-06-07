@@ -1,0 +1,140 @@
+
+.nav-link {
+  font-size: 40px;
+  font-weight: 600;
+  color: rgb(41, 191, 41);
+  margin: 0;
+}
+
+.disabled {
+  color: rgba(18, 157, 18, 0.522)
+}
+.nav-container {
+  position: relative;
+}
+
+.nav-toggle {
+  font-size: 60px;
+  background: none;
+  border: none;
+  color:  rgb(41, 191, 41);
+  cursor: pointer;
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.nav-hide {
+  transform: translateX(100%);
+}
+
+.nav-show {
+  transform: translateX(0);
+}
+
+.nav-offcanvas {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  padding: 20px;
+  z-index: 1000;
+  transition: transform 0.3s ease-in-out;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-close {
+  font-size: 40px;
+  background: none;
+  border: none;
+  color: rgb(41, 191, 41);
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+}
+
+.nav-item {
+  list-style: none;
+  margin: 20px 0;
+}
+
+.nav-link {
+  color: rgb(41, 191, 41);
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 800;
+  text-align: center;
+}
+
+.nav-link:hover {
+  color: #007bff;
+  text-decoration: underline;
+  text-underline-offset: 9px;
+}
+
+.navbar-brand {
+  font-size: 100px;
+  font-weight: 800;
+  color:  rgb(41, 191, 41);
+  display: block;
+  padding-bottom: 10px;
+  margin: 0;
+}
+
+/* Media Queries */
+@media (max-width: 992px) {
+  .nav-links-large-screen {
+    display: none;
+  font-weight: 800;
+  }
+
+  .nav-toggle {
+    display: block;
+  }
+
+
+.navbar-brand {
+    font-size: 40px;
+    padding-top: 20px;
+  }
+
+  .nav-toggle {
+    font-size: 30px;
+    vertical-align: middle;
+  }
+}
+
+@media (min-width: 993px) {
+  .nav-offcanvas, .overlay, .nav-toggle {
+    display: none;
+  }
+
+  .nav-links-large-screen {
+    display: flex;
+    font-size: 20px;
+  }
+
+
+  .nav-container {
+    padding-bottom: 10px;
+  }
+
+
+}
